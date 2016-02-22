@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="../css/bootstrap-theme.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="./js/cookie.js"></script>
+
+  <title>Cookies, SessionStorage, LocalStorage</title>
+  
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html">PDC</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <!--<li><a href="/DWESE/index.php">DWESE</a></li>
+            <li><a href="/Android/index.php">Android</a></li>-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/Contacto">Contacto</a></li>
+          </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+</head>
+<body>
+
+  <div class="container">
+      <div class="row">
+  			<div class="col-lg-4">
+          <h2>Cookies</h2>
+  				<h3>¿Qué es?</h3>
+          <p>Una cookie es una pequeña información enviada por un sitio web y almacenada en el navegador del usuario, de manera que el sitio web puede consultar la actividad previa del usuario.</p>
+          <h3>Ejemplo</h3>
+          <input type="button" class="btn btn-primary" id="crearcookie" value="Crear">
+          <input type="button" class="btn btn-primary" id="borrarcookie" value="Borrar">
+          <input type="button" class="btn btn-primary" id="mostrarcookie" value="Mostrar">
+          <br/><label id="resCookie"></label>
+  			</div>
+        
+        <div class="col-lg-4">
+          <h2>Local Storage</h2>
+          <h3>¿Qué es?</h3>
+          <p>La propiedad localStorage te permite acceder al objeto local Storage. localStorage es similar a sessionStorage. La única diferencia es que, mientras los datos almacenados en localStorage no tienen fecha de expiración, los datos almacenados en sessionStorage son eliminados cuando el la sesion de navegación finaliza - lo cual ocurre cuando el navegador es cerrado.</p>
+
+          <h3>Métodos</h3>
+          <label>setItem(nombre,valor):</label> <p>signa un nombre y un valor a un localStorage</p>
+          <label>removeItem(nombre):</label> <p>borra el localStorage correspondiente al nombre pasado por parámetro.</p>
+          <label>getItem(nombre):</label> <p>devuelve el valor del localStorage cuyo nombre coincida con el pasado por parámetro.</p>
+          <h3>Ejemplo</h3>
+          <input type="button" class="btn btn-primary" id="crearlocal" value="Crear">
+          <input type="button" class="btn btn-primary" id="borrarlocal" value="Borrar">
+          <input type="button" class="btn btn-primary" id="mostrarlocal" value="Mostrar">
+          <br/><label id="reslocal"></label>
+        </div>
+
+        <div class="col-lg-4">
+          <h2>Session Storage</h2>
+          <h3>¿Qué es?</h3>
+          <p>La propiedad sessionStorage permite acceder a un objeto Storage asociado a la sesión actual. La propiedad sessionStorage es similar a localStorage, la única diferencia es que la información almacenada en localStorage no posee tiempo de expiración, por el contrario la información almacenada en sessionStorage es eliminada al finalizar la sesion de la página.</p>
+        </div>
+
+        <div class="col-lg-12">
+            <h2>Ventajas e Inconvenientes</h2>
+ 
+			<h4>Cookies</h4>
+		    <p>Espacio limitado: Una cookie sólo puede ocupar 4kb de espacio.</p>
+		    <p>Cada vez que se realiza una petición al servidor, toda la información que está almacenada en las cookies es enviada y también es recibida nuevamente con la respuesta del servidor.</p>
+		    <p>Las cookies tienen una caducidad.</p>
+
+
+			<h4>LocalStorage</h4>
+		    <p>Espacio menos limitado: localStorage puede ocupar entre 5 y 10MB dependiendo del navegador web.</p>
+		    <p>La información almacenada con localStorage no es enviada al servidor en cada petición.</p>
+		    <p>No existe una caducidad para localStorage, la información quedará almacenada hasta que se elimine expresamente. Aunque se cierre el navegador.</p>
+
+			<h4>SessionStorage</h4>
+			<p>Lo mismo que LocalStorage pero la información desaparece al cerrar el navegador</p>
+			
+        </div>
+      </div>
+  </div>
+</body>
+</html>

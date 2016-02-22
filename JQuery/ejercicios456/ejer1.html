@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/jquery-2.2.0.js"></script>
+ 	<script src="./js/ejer1.js"></script>
+	<title>Ejercicio 1</title>
+</head>
+<body>
+	<h1>Distintas formas de acceder al atributo checked. Compruébalo en las distintas plataformas, tanto con input como con radio buttons</h1>
+	<ul>
+	    <li>:selected Selector</li>
+	    <li>.prop()</li>
+	    <li>.attr()</li>
+	    <li>:checked Selector</li>
+	    <li>.val()</li>
+	</ul>
+	
+	<h2>Checkboxs</h2>
+	<input type="checkbox" name="check" class="check" value="1" checked disabled>1
+	<input type="checkbox" name="check" class="check" value="2" disabled>2
+	<input type="checkbox" name="check" class="check" value="3" disabled>3
+	<input type="checkbox" name="check" class="check" value="4" checked disabled>4
+	<span id="msjChk"></span></br>
+	<span id="msjChkAttr"></span>
+
+	<h2>Radios</h2>
+	<input type="radio" name="radio1" class="radio" value="5"  disabled>5
+	<input type="radio" name="radio2" class="radio" value="6"  disabled>6
+	<input type="radio" name="radio3" class="radio" value="7" checked disabled>7
+	<input type="radio" name="radio4" class="radio" value="8" checked disabled>8
+	<span id="msjRadio"></span>
+	<span id="msjRadioVal"></span>
+
+	<h2>Select</h2>
+	<select id="selector" disabled>
+		<option value="Manolo">Manolo</option>
+		<option value="Paco" selected>Paco</option>
+		<option value="Maria">Maria</option>
+		<option value="Alberto">Alberto</option>
+	</select></br>
+	<span id="msjSelect"></span>
+</body>
+</body>
+</html>

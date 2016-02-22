@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/external/jquery/jquery.js" rel="text/javascript"></script>
+	<script src="./js/jquery-ui.js" rel="text/javascript"></script>
+	<script src="./js/tabs.js" rel="text/javascript"></script>
+	<script src="./js/acordeon.js" rel="text/javascript"></script>
+	<script src="./js/autocomplete.js" rel="text/javascript"></script>
+	<script src="./js/slider.js" rel="text/javascript"></script>
+	<link rel="stylesheet" href="./js/jquery-ui.css">
+	<link rel="stylesheet" href="./js/jquery-ui.structure.css">
+	<link rel="stylesheet" href="./js/jquery-ui.theme.css">
+	<link rel="stylesheet" href="./css/estilo.css">
+
+	<title>JQuery UI</title>
+</head>
+<body>
+	<header>
+	<h1>JQuery UI - Pablo Durán Camacho</h1>
+	</header>
+
+	<div id="tabs">
+	  <ul>
+	    <li><a href="#tabs-1">Accordion</a></li>
+	    <li><a href="#tabs-2">Autocomplete</a></li>
+	    <li><a href="#tabs-3">Slider</a></li>
+	    <li><a href="#tabs-4">Detalles</a></li>
+	  </ul>
+	  <div id="tabs-1">
+	  	<h3>Acordeón</h3>
+	    <div id="accordion">
+		  <h3>Descripción</h3>
+		  <div>
+		    <p>El acordeón de JQuery UI consiste en un elemento que se expande o contrae mostrando u ocultando información.</p>
+		  </div>
+		  <h3>Código</h3>
+		  <div>
+		  	<h3>HTML</h3>
+		    <pre>
+			&lt;div id="accordion"&gt;
+			  &lt;h3 Descripción&lt;/h3&gt;
+			  &lt;div&gt;
+			    &lt;p&gt;El acordeón de JQuery UI consiste en un elemento que se expande o contrae mostrando u ocultando información.&lt;/p&gt;
+			  &lt;/div&gt;
+			  &lt;h3&gt;Código&lt;/h3&gt;
+			  &lt;div&gt;
+			    
+			  &lt;/div&gt;
+			  &lt;h3&gt;Section 3&lt;/h3&gt;
+			  &lt;div&gt;
+			      &lt;a href="http://jqueryui.com/accordion/#collapsible"&gt;Enlace a la página del sitio oficial&lt;/a&gt;
+			  &lt;/div&gt;
+			&lt;/div&gt;
+		</pre>
+		
+		<h3>JQuery</h3>
+		<pre>
+		$(document).ready(function() {
+			$( "#accordion" ).accordion({
+		       heightStyle: "content"
+			});
+		});
+		</pre>
+
+
+
+		  </div>
+		  <h3>Enlace</h3>
+		  <div>
+		      <a href="http://jqueryui.com/accordion/#collapsible">Enlace a la página del sitio oficial</a>
+		  </div>
+		</div>
+
+	  </div>
+	  <div id="tabs-2">
+	    <h3>Descripción</h3>
+	   	<p>El autocomplete de JQuery UI es el típico cuadro que sugiere opciones a la hora de ir escribiendo.</p>
+	   	<label for="search">Buscar: </label>
+		<input id="search">
+
+	   	<h3>Código</h3>
+	   	<h4>HTML</h4>
+	   	<pre>
+	   		&lt;label for="search">Buscar: &lt;/label&gt;
+			&lt;input id="search"&gt;
+	   	</pre>
+	   	<h4>JQuery</h4>
+		<pre>
+		$(document).ready(function() {
+			$.widget( "custom.catcomplete", $.ui.autocomplete, {
+			    _create: function() {
+			      this._super();
+			      this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+			    },
+			    _renderMenu: function( ul, items ) {
+			      var that = this,
+			        currentCategory = "";
+			      $.each( items, function( index, item ) {
+			        var li;
+			        if ( item.category != currentCategory ) {
+			          ul.append( "&lt;li class='ui-autocomplete-category'&gt;" + item.category + "&lt;/li&gt;" );
+			          currentCategory = item.category;
+			        }
+			        li = that._renderItemData( ul, item );
+			        if ( item.category ) {
+			          li.attr( "aria-label", item.category + " : " + item.label );
+			        }
+			      });
+			    }
+			});
+
+		    var data = [
+		      { label: "Chorizo", category: "Carnes" },
+		      { label: "Salchichón", category: "Carnes" },
+		      { label: "Jamon York", category: "Carnes" },
+		      { label: "Plátano", category: "Frutas" },
+		      { label: "Pomelo", category: "Frutas" },
+		      { label: "Kiwi", category: "Frutas" },
+		      { label: "Doritos", category: "Snacks" },
+		      { label: "Pelotazos", category: "Snacks" },
+		      { label: "Patatas Fritas", category: "Snacks" }
+		    ];
+		 
+		    $( "#search" ).catcomplete({
+		      delay: 0,
+		      source: data
+		    });
+		});
+		</pre>
+	   	<h3>Enlace</h3>
+	   	<a href="http://jqueryui.com/autocomplete/#categories">Enlace a la página del sitio oficial</a>
+	  </div>
+
+	  <div id="tabs-3">
+	  	<h3>Descripción</h3>
+		<p>El elemento slide de JQuery UI consiste  en una barra que puedes desplazar para cambiar su valor.</p>
+		<p>
+		  <label for="amount">Precio:</label>
+		  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+		</p>
+		<div id="slider-range"></div>
+
+	  	<h3>Código</h3>
+	  	<h4>HTML</h4>
+	    <pre>
+  	&lt;label for="amount"&gt;Price range:&lt;/label&gt;
+ 	&lt;input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"&gt;
+	&lt;div id="slider-range"&gt;&lt;/div&gt;
+	    </pre>
+	    <h4>JQuery</h4>
+	    <pre>
+	$(document).ready(function() {
+		$( "#slider-range" ).slider({
+	      range: true,
+	      min: 0,
+	      max: 1000,
+	      values: [ 75, 300 ],
+	      slide: function( event, ui ) {
+	        $( "#amount" ).val( "" + ui.values[ 0 ] + "€ - " + ui.values[ 1 ]+"€" );
+	      }
+	    });
+	    $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+	      "€ - " + $( "#slider-range" ).slider( "values", 1 )+"€" );
+	});
+	    </pre>
+		 
+		
+		<h3>Enlace</h3>
+		<a href="http://jqueryui.com/slider/#range">Enlace a la página del sitio oficial</a>
+	  </div>
+
+	   <div id="tabs-4">
+	   		<p>Modificaciones en el tema Blitzer</p>
+	   		<div class="imagenes">
+			   <img src="./img/tema1.png" alt="tema1">
+			   <img src="./img/tema2.png" alt="tema2">
+			   <img src="./img/tema3.png" alt="tema3">
+		   </div>
+		   <p>Para aligerar la carga he desactivado los elementos que no eran necesarios (los que no voy a usar) a la hora de descargar JQuery UI.</p>
+		   <img src="./img/elem1.png" alt="elemento1">
+		   <img src="./img/elem2.png" alt="elemento2">
+		   <img src="./img/elem3.png" alt="elemento3">
+		   <img src="./img/elem4.png" alt="elemento4">
+	   </div>
+	</div>
+
+
+
+	
+
+</body>
+</html>

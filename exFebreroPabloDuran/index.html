@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/exFebJavaScripPabloDuranCamacho.js" rel="text/javascript"></script>
+	<link rel="stylesheet" href="./css/estilo.css">
+	<title>Pablo Durán Camacho</title>
+</head>
+<body>
+	<fieldset>
+	<label>Nombre </label><input type="text" name="nombre" id="nombre" placeholder="Nombre"><span class="error" id="errorNombre"></span><br/><br/>
+	<label>Apellido1 </label><input type="text" name="apellido1" id="apellido1" placeholder="apellido1"><span class="error" id="errorApellido1"></span><br/><br/>
+	<label>Apellido2 </label><input type="text" name="apellido2" id="apellido2" placeholder="apellido2"><span class="error" id="errorApellido2"></span><br/><br/>
+	<label>DNI </label><input type="text" name="dni" id="dni" placeholder="dni"><span class="error" id="errorDni"></span><br/><br/>
+	<label>Sexo </label><select name="sexo" id="sexo">
+		<option value="hombre">Hombre</option>
+		<option value="mujer">Mujer</option>
+	</select>
+	<br/><br/>
+	<input type="checkbox" id="checkbox">Acepto las condiciones &nbsp<span class="error" id="errorCheckbox"></span><br/>
+	<input type="button" id="enviar" value="Nuevo usuario"><input type="button" id="limpiar" value="limpiar">
+	</fieldset>
+	<div id="datosUsuario"></div>
+
+
+	<ul id="lista"></ul>
+
+</body>
+</html>

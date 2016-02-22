@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="../css/bootstrap-theme.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="./js/formulario.js"></script>
+
+  <title>Formulario</title>
+  
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html">PDC</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <!--<li><a href="/DWESE/index.php">DWESE</a></li>
+            <li><a href="/Android/index.php">Android</a></li>-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/Contacto">Contacto</a></li>
+          </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+</head>
+<body>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+            <h1>Formulario</h1>
+           
+          <form name="formulario">
+            <p><label>Text</label>&nbsp<input type="text" id="texto" placeholder="pan">&nbsp<span id="textoError"></span><br/><br/></p>
+            <p><label>Number</label>&nbsp<input type="number" id="numero" placeholder="22">&nbsp<span id="numeroError"></span><br/><br/></p>
+            <p><label>Teléfono</label>&nbsp<input type="tel" id="telefono" placeholder="957 00 00 00">&nbsp<span id="telefonoError"></span><br/><br/></p>
+            <p><label>e-mail</label>&nbsp<input type="text" id="email" placeholder="ejemplo@ejemplo.com">&nbsp<span id="emailError"></span><br/><br/></p>
+            <p><label>URL</label>&nbsp<input type="text" id="urlC" placeholder="www.ejemplo.com">&nbsp<span id="urlError"></span><br/><br/></p>
+            <p><label>Fecha</label>&nbsp<input type="date" id="fecha" placeholder="12/12/1993">&nbsp<span id="fechaError"></span><br/><br/></p>
+            <p><label>Cuenta Bancaria</label>&nbsp<input type="text" id="cuentaBanco" placeholder="1111 1111 11 1111111111">&nbsp<span id="bancoError"></span><br/><br/></p>
+            <p><label>DNI</label>&nbsp<input type="text" id="dni" placeholder="00000000Z">&nbsp<span id="dniError"></span></p>
+            
+            <p><br/><label>Select</label>&nbsp<select id="select">
+            <option></option>
+            <option>Opcion1</option>
+            <option>Opcion2</option>
+            <option>Opcion3</option>
+            <option>Opcion4</option>  
+            </select>&nbsp<span id="selectError"></span></p>
+
+            
+            <br/><label>Radio</label>
+            <label class="radio-inline"><input type="radio" name="radios" value="radio1">radio1</label>
+            <label class="radio-inline"><input type="radio" name="radios" value="radio2">radio2</label>
+            <label class="radio-inline"><input type="radio" name="radios" value="radio3">radio3</label>
+            </br><span id="radioError"></span>
+            
+            </br><label>Checkboxs</label>
+            <input type="checkbox" name="checkboxs">Checkbox1&nbsp
+            <input type="checkbox" name="checkboxs">Checkbox2&nbsp
+            <input type="checkbox" name="checkboxs">Checkbox3</br>
+            <span id="checkboxError"></span>
+
+            </br><input class="btn btn-primary" name="enviar" type="button" value="enviar">
+
+
+          </form>
+          </div><!-- /.col-lg-7 -->
+    </div>
+  </div>
+  
+</body>
+</html>

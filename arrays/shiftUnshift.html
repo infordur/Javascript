@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="../css/bootstrap-theme.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="./js/shiftUnshift.js"></script>
+
+  <title>Shift/Unshift</title>
+  
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html">PDC</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <!--<li><a href="/DWESE/index.php">DWESE</a></li>
+            <li><a href="/Android/index.php">Android</a></li>-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/Contacto">Contacto</a></li>
+          </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+</head>
+<body>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="col-lg-12">
+            <h1>Shift/Unshift</h1>
+           <p>Write a code to alert a random value from array arr:</br>
+            var arr = ["Plum","Orange","Donkey","Carrot","JavaScript"]
+            </br>P.S. The code to get a random integer from min to max (inclusive) is:</br>
+            var rand = min + Math.floor(Math.random()*(max+1-min))
+            </p>
+
+          <p id="mensaje">
+
+            <h4>Preguntas</h4>
+            <ol>
+              <li><label>Utilidad</label></li>
+              <p>Los métodos shift y unshift sirven para eliminar o añadir elementos al principio del array.</p>
+                <li><label>¿Modifican el array original?</label></li>
+                <p>Si</p>
+                <li><label>¿Devuelven algún valor?</label></li>
+                <p>Si, en shift devuelve el tamaño final del array, y en el caso de unshift también devuelve el tamaño del array</p>
+                <li><label>De los cuatro métodos anteriores, indica los recomendados para la inserción/eliminación de un elemento y por qué.</label></li>
+                <p>Dependiendo si deseamos añadir o eliminar elementos del principio o del final utilizaremos uno u otro, pero en cuanto a velocidad añadir elementos al final es más rápido que hacerlo al principio, por lo cual utilizar push() y pop() será más rápido que utilizar shift() o unshift()</p>
+            </ol>
+
+          </div><!-- /.col-lg-7 -->
+      </div>
+  </div>
+  
+</body>
+</html>

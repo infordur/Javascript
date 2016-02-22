@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="../css/bootstrap-theme.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="./js/arrayOperaciones.js"></script>
+
+  <title>Array</title>
+  
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html">PDC</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav">
+            <!--<li><a href="/DWESE/index.php">DWESE</a></li>
+            <li><a href="/Android/index.php">Android</a></li>-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/Contacto">Contacto</a></li>
+          </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+</head>
+<body>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          
+            <h1>Arrays Matemáticos</h1>
+           <p>Mediante prototype, agrega los métodos sumar, restar, trasponer y multiplicar a la clase ArraysMatematicos. Recuerda que el estado de un array deberían de ser los elementos.</br>
+           Recuerda las restricciones y posibilidades de un Array:</p>
+            <ol>
+              <li>Sobre las dimensines de los arrays implicados (unidimensional, bidimensional...)</li>
+              <li>Sobre las longitudes de los arrays implicados (1 en adelante)</li>
+              <li>Sobre los contenidos de los arrays implicados (numéricos)</li>
+              <li>Podemos rellenar un Array con valores aleatorios o directamente desde teclado.</li>
+            </ol>
+            <p>
+            Una vez creada la clase, demuestra su funcionamiento en una página bien diseñada. Evita las cajas de texto y hazla lo más dinámica posible.
+            </p>
+            <h4>Ejercicio</h4>
+            </div><!-- /.col-lg-7 -->
+            <div class="col-lg-4">
+            <section class="container text-center" id="container">
+              <p>Matriz:</p>
+              <select id="variable">
+                <option value="m1">matriz1</option>
+                <option value="m2">matriz2</option>
+              </select>
+              <p>Filas:</p>
+              <select id="filas">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+
+            <p>Columnas:</p>
+              <select id="columnas">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            </br></br><input type="button" id="boton" value="generar Elementos" class="btn btn-primary">
+            <input type="button" id="botonA" value="generar matriz aleatoria" class="btn btn-primary"></br></br>
+              <div id="generado" class="text-center">
+                
+              </div>
+              <h3>matriz 1</h3>
+              <div id="matrices" class="text-center">
+                
+              </div>
+              <h3>matriz 2</h3>
+
+              <div id="matrices2" class="text-center">
+                
+              </div>
+              <h3>resultado</h3>
+
+              <div id="resultado" class="text-center">
+              </div>
+          <input type="button" id="Bsuma" value="sumar" class="btn btn-primary" disabled/>
+          <input type="button" id="Bresta" value="restart" class="btn btn-primary" disabled/>
+          <input type="button" id="Btrasponer" value="trasponer" class="btn btn-primary" disabled/>
+          <input type="button" id="Bmultiplicar" value="multiplicar" class="btn btn-primary" disabled/>
+            </section>
+            </div>
+            <!--Matriz 2
+            <label>Filas</label><input class="form-control" type="number" size="4" id="filas2">
+            <label>Columnas</label><input class="form-control" type="number" size="4" id="columnas2">-->
+          <div class="col-lg-12">
+            <section id="contenido"></section>
+          </div>
+         
+      </div>
+  </div>
+  
+</body>
+</html>
