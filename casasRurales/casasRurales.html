@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="./css/normalize.css" type="text/css" rel="stylesheet">
+	<link href="./css/estilos.css" type="text/css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="./js/jquery-ui.css">
+	<script src="./js/external/jquery/jquery.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	
+	<script src="./js/efectos.js"></script>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	
+	<title>Casas Rurales</title>
+
+</head>
+<body>
+	<header>
+		<div class="cabecera">
+			<a class="logo" html="./index.html"><img src="./img/logo.png"><h3>RuralTrip</h3></a>
+			<a class="iconoMenu" href="#menu"><img src="./img/ic_reorder_black_24dp_2x.png" alt="Menu"></a>
+		</div>
+		<nav id="menu">
+			<ul>
+				<a href="./index.html"><li>Inicio</li></a>
+				<a href="./casasRurales.html"><li>Casas</li></a>
+			</ul>
+		</nav>
+
+		<nav class="menuResolucionAlta">
+			<ul>
+				<a href="./index.html"><li>Inicio</li></a>
+				<a href="./casasRurales.html"><li>Casas</li></a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		
+		<!--<section class="busquedaSuperior">
+			<h3>Alquila una casa para tus próximas vacaciones.</h3>
+			<div class="cuadroBusqueda">
+				<input type="text" name="buscar" placeholder="Localidad..."><label>
+				<button id="button" class="ui-state-default ui-corner-all"><img src="./img/ic_search_black_24dp_2x.png"></label></button>
+			</div>
+		</section>-->
+		
+
+<!--Efecto JQUERY-->
+<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+		<section>
+			<div class="Casas">
+				<article class="casasRecomendadas">
+					<picture>
+					  <source
+					    media="(min-width: 768px)"
+					    srcset="./img/casa1M.jpg">
+					  <img
+					    src="./img/casa1S.jpg"
+					    alt="Casa Rural">
+					</picture>
+					
+					<div class="contenido">
+						<h3 class="tituloCasa">Casa de Montaña</h3>
+						<div class="descripcion">
+							<p>Casa rural estupenda a los pies de la montaña, 2 baños, 3 dormitorios.</p>
+						</div>
+						<footer>
+							<div class="precio">
+								<p>Desde/Noche:
+								<h3>79€/noche</h3></p>
+							</div>
+							<a href="./casa.html" class="boton" name="boton">Detalles</a>
+						</footer>
+					</div>
+					
+				</article>
+
+				<article class="casasRecomendadas">
+					<picture>
+					  <source
+					    media="(min-width: 768px)"
+					    srcset="./img/casa2M.jpg">
+					  <img
+					    src="./img/casa2S.jpg"
+					    alt="Casa Rural">
+					</picture>
+					<div class="contenido">
+					<h3 class="tituloCasa">Casa del Lago</h3>
+						<div class="descripcion">
+							<p>Casa rural estupenda a los pies de la montaña, 2 baños, 3 dormitorios.</p>
+						</div>
+						<footer>
+							<div class="precio">
+								<p>Desde/Noche:
+								<h3>79€/noche</h3></p>
+							</div>
+							<a href="./casa.html" class="boton" name="boton">Detalles</a>
+						</footer>
+					</div>
+				</article>
+
+				<article class="casasRecomendadas">
+					<picture>
+					  <source
+					    media="(min-width: 768px)"
+					    srcset="./img/casa3M.jpg">
+					  <img
+					    src="./img/casa3S.jpg"
+					    alt="Casa Rural">
+					</picture>
+					<div class="contenido">
+					<h3 class="tituloCasa">Casa de Bosque</h3>
+						<div class="descripcion">
+							<p>Casa rural estupenda a los pies de la montaña, 2 baños, 3 dormitorios.</p>
+						</div>
+						<footer>
+							<div class="precio">
+								<p>Desde/Noche:
+								<h3>79€/noche</h3></p>
+							</div>
+							<a href="./casa.html" class="boton" name="boton">Detalles</a>
+						</footer>
+					</div>
+				</article>
+
+				<article class="casasRecomendadas">
+					<picture>
+					  <source
+					    media="(min-width: 768px)"
+					    srcset="./img/casa4M.jpg">
+					  <img
+					    src="./img/casa4S.jpg"
+					    alt="Casa Rural">
+					</picture>
+					<div class="contenido">
+					<h3 class="tituloCasa">Casa de Prado</h3>
+						<div class="descripcion">
+							<p>Casa rural estupenda a los pies de la montaña, 2 baños, 3 dormitorios.</p>
+						</div>
+						<footer>
+							<div class="precio">
+								<p>Desde/Noche:
+								<h3>79€/noche</h3></p>
+							</div>
+							<a href="./casa.html" class="boton" name="boton">Detalles</a>
+						</footer>
+					</div>
+				</article>
+				<article class="casasRecomendadas">
+					<picture>
+					  <source
+					    media="(min-width: 768px)"
+					    srcset="./img/casa4M.jpg">
+					  <img
+					    src="./img/casa4S.jpg"
+					    alt="Casa Rural">
+					</picture>
+					<div class="contenido">
+					<h3 class="tituloCasa">Casas Prado</h3>
+						<div class="descripcion">
+							<p>Casa rural estupenda a los pies de la montaña, 2 baños, 3 dormitorios.</p>
+						</div>
+						<footer>
+							<div class="precio">
+								<p>Desde/Noche:
+								<h3>79€/noche</h3></p>
+							</div>
+							<a href="./casa.html" class="boton" name="boton">Detalles</a>
+						</footer>
+					</div>
+				</article>
+				<article class="casasRecomendadas">
+					<picture>
+					  <source
+					    media="(min-width: 768px)"
+					    srcset="./img/casa4M.jpg">
+					  <img
+					    src="./img/casa4S.jpg"
+					    alt="Casa Rural">
+					</picture>
+					<div class="contenido">
+					<h3 class="tituloCasa">Casas Prado</h3>
+						<div class="descripcion">
+							<p>Casa rural estupenda a los pies de la montaña, 2 baños, 3 dormitorios.</p>
+						</div>
+						<footer>
+							<div class="precio">
+								<p>Desde/Noche:
+								<h3>79€/noche</h3></p>
+							</div>
+							<a href="./casa.html" class="boton" name="boton">Detalles</a>
+						</footer>
+					</div>
+				</article>
+				<article class="casasRecomendadas">
+					<picture>
+					  <source
+					    media="(min-width: 768px)"
+					    srcset="./img/casa4M.jpg">
+					  <img
+					    src="./img/casa4S.jpg"
+					    alt="Casa Rural">
+					</picture>
+					<div class="contenido">
+					<h3 class="tituloCasa">Casas Prado</h3>
+						<div class="descripcion">
+							<p>Casa rural estupenda a los pies de la montaña, 2 baños, 3 dormitorios.</p>
+						</div>
+						<footer>
+							<div class="precio">
+								<p>Desde/Noche:
+								<h3>79€/noche</h3></p>
+							</div>
+							<a href="./casa.html" class="boton" name="boton">Detalles</a>
+						</footer>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
+</div>
+	</main>
+</body>
+
+	<noscript>Javascript no está activado, para el correcto funcionamiento de la página, por favor actívelo, puede saber como hacerlo en el siguiente enlace: <a href="http://www.enable-javascript.com/es/">Cómo activar Javascript</a></noscript>
+
+</html>

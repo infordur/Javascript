@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/external/jquery/jquery.js" rel="text/javascript"></script>
+	<script src="./js/jquery-ui.js" rel="text/javascript"></script>
+	<script src="./js/tabs.js" rel="text/javascript"></script>
+	<link rel="stylesheet" href="./js/jquery-ui.css">
+	<link rel="stylesheet" href="./js/jquery-ui.structure.css">
+	<link rel="stylesheet" href="./js/jquery-ui.theme.css">
+	<link rel="stylesheet" href="./css/documentacion.css">
+
+	<title>Casas Rurales - Documentación</title>
+</head>
+<body>
+	<header>
+	</header>
+	<div class="cabecera">
+		<h2>Documentación Casas Rurales</h2>
+		<small>Pablo Durán Camacho</small>
+	</div>
+	<div id="tabs">
+	  <ul>
+	    <li><a href="#tabs-1">Javascript Activo</a></li>
+	    <li><a href="#tabs-2">Cookies Activas</a></li>
+	    <li><a href="#tabs-3">Página Inicio</a></li>
+	    <li><a href="#tabs-4">Página Casas</a></li>
+	    <li><a href="#tabs-5">Lightbox</a></li>
+	    <li><a href="#tabs-6">Formulario</a></li>
+	    <li><a href="#tabs-7">Plugins</a></li>
+	    <li><a href="#tabs-8">JQuery UI</a></li>
+	  </ul>
+	  <div id="tabs-1">
+		<h3>Comprobación de que Javascript está activo.</h3>
+		<p>Si javascript no se encuentra activo en nuestro navegador nos saldrá un mensaje indicandolo y diciendonos como se puede activar.</p>
+	  	<img src="./imgDocumentacion/JA2.png" alt="Javascript Activo">
+	  	<p>Este es el código para implementar la imagen anterior.</p>
+		<img src="./imgDocumentacion/JA1.png" alt="Javascript Activo">
+
+	  </div>
+	  <div id="tabs-2">
+	    <h3>Comprobación de que las cookies están activadas.</h3>
+		<p>Si las cookies no se encuentran activadas en nuestro navegador nos saldrá un mensaje indicandolo.</p>
+	  	<img src="./imgDocumentacion/CA.png" alt="Cookies Activas">
+	  	<p>Este es el código para implementar la imagen anterior.</p>
+		<img src="./imgDocumentacion/CA2.png" alt="Cookies Activas">
+	  </div>
+
+	  <div id="tabs-3">
+	  	<h3>Página de inicio</h3>
+	  	<p>Para la página de inicio se han añadido los mensajes de activación de cookies y javascript en caso de que no esten activos.</p>
+	  	<img src="./imgDocumentacion/JA2.png" alt="Javascript Activo">
+	  	<img src="./imgDocumentacion/CA.png" alt="Cookies Activas">
+		
+		<h3>Efectos</h3>
+		<p>También se ha añadido un efecto con jquery en el cuadro de busqueda y en el botón.
+		El código es el siguiente:</p>
+		<p>Efecto del buscador:</p>
+		<p>Este código hace que el buscador se muestre.</p>
+	  	<img src="./imgDocumentacion/EB.png" alt="Efecto Buscador">
+	  	<p>Efecto del botón:</p>
+	  	<p>Este código hace que el botón se desplaze hacia la derecha, después hacia la izquierda y acaba en el centro con la letra ampliada.</p>
+	  	<img src="./imgDocumentacion/EBo.png" alt="Efecto Botón">
+
+	  </div>
+
+	  <div id="tabs-4">
+	  	<h3>Página de Casas</h3>
+	   		<p>Para la página que muestra las casas disponibles se ha añadido un efecto que despliega la lista de casas además de un efecto al título de la casa.</p>
+	   		<p>El efecto aplicado al título de la casa hará que este aparezca, agrande el tamaño de la letra y se cambie a color verde</p>
+	  		<div class="grupo">
+	  		<img src="./imgDocumentacion/LC3.png" alt="Efecto Título Casa">
+	  		<img id="flecha" src="./img/flecha.png" alt="flecha">
+
+	  		<img src="./imgDocumentacion/LC.png" alt="Efecto Título Casa">
+	  		</div>
+
+	  		El código es el siguiente:
+	  		<img src="./imgDocumentacion/LC2.png" alt="Efecto Título Casa">
+			
+
+	  </div>
+
+	  <div id="tabs-5">
+	  	<h3>LightBox</h3>
+	   		<p>En la página de vista de la casa seleccionada se encontrarán una serie de imágenes que muestran la casa por medio de un lightbox</p>
+	  		<div class="grupo2">
+		  		<img src="./imgDocumentacion/LB1.png" alt="Lightbox">
+		  		<img src="./imgDocumentacion/LB2.png" alt="Lightbox">
+		  		<img src="./imgDocumentacion/LB3.png" alt="Lightbox">
+		  		<img src="./imgDocumentacion/LB4.png" alt="Lightbox">
+		  		<img src="./imgDocumentacion/LB5.png" alt="Lightbox">
+	  		</div>
+	  		<p>Para ello sólo ha hecho falta importar la librería <b>lighbox</b> e implementarla usando el siguiente código:</p>
+		  	<img src="./imgDocumentacion/LB6.png" alt="Lightbox código">
+	  </div>
+
+	  <div id="tabs-6">
+	   		<h3>Formulario</h3>
+
+	   		<h3>Validación</h3>
+	   		<p>Para la validación de formularios he utilizado un plugin de jquery (<a href="https://github.com/jzaefferer/jquery-validation">jquery validation</a>) con el que la validación se hace de forma más sencilla.</p>
+		  	<p>El código del formulario es el siguiente:</p>
+		  	<img src="./imgDocumentacion/F.png" alt="Formulario">
+		 
+		  	<p>El código jquery para validar el formulario es el siguiente</p>
+		  	<img class="tam" src="./imgDocumentacion/VF1.png" alt="Validación formulario">
+
+		  	<p>En algunos casos ha hecho falta añadir un patrón personalizado ya que el que incorpora el plugin no nos servía, como es el caso de la fecha y el email</p>
+		  	<img src="./imgDocumentacion/VF4.png" alt="Formulario">
+
+		  	<h3>Mensajes personalizados</h3>
+			<p>Para los mensajes de error, el mismo plugin permite personalizarlos dependiendo del tipo de error especificado en las reglas.</p>
+		  	<img class="tam" src="./imgDocumentacion/VF2.png" alt="Validación formulario">
+		  	<img class="tam" src="./imgDocumentacion/VF3.png" alt="Validación formulario">
+			
+		  	<h3>Fechas</h3>
+			<p>Para las fechas he utilizado el elemento <b>Datepicker</b> de jquery-ui, en el que he tenido que cambiar la configuración para adaptarlo a español</p>
+		  	<img class="tam" src="./imgDocumentacion/DP.png" alt="Validación formulario">
+		  	<img class="tam" src="./imgDocumentacion/DP2.png" alt="Validación formulario">
+		  	<p>Para el control de que no se puedan seleccionar fechas incorrectas (fecha de salida anterior que fecha de entrada o fecha entrada anterior al dia actual) he tenido que añadir un pequeño código para controlarlo.</p>
+		  	<img class="tam" src="./imgDocumentacion/DP3.png" alt="Validación formulario">
+			
+		  	<h4>Cookies</h4>
+			<p>Para la creación y manejo de cookies he utilizado el plugin <a href="https://github.com/carhartl/jquery-cookie">jquery cookie</a> que facilita la creación y el manejo de cookies</p>
+			<p>Si el usuario se ha creado correctamente los datos se almacenarán en cookies y serán cargados la siguiente vez.</p>
+		  	<img class="tam" src="./imgDocumentacion/CO2.png" alt="Cookies">
+		  	<p>El código de creación de cookies es el siguiente:</p>
+		  	<img class="tam" src="./imgDocumentacion/CO1.png" alt="Cookies">
+		  	<p>El código que carga los datos en los inputs si las cookies existen es el siguiente:</p>
+		  	<img class="tam" src="./imgDocumentacion/CO3.png" alt="Cookies">
+	  </div>
+
+	  <div id="tabs-7">
+	   		<h3>Plugins</h3>
+	   		<p>Para la realización de esta práctica he utilizado 2 plugins externos de jquery.</p>
+	   		<ul>
+	   			<li><b>jquery validation</b> <a href="https://github.com/jzaefferer/jquery-validation">Página en Github</a></li>
+	   			<p>Este plúgin simplifica la validación de formularios ya que solo has de indicar las reglas que quieres que se aplicen y sus mensajes correspondientes.</p>
+	   			<li><b>jquery cookie</b> <a href="https://github.com/carhartl/jquery-cookie">Página en Github</a></li>
+	   			<p>Este plugin ayuda con la creación y manejo de cookies con jquery.</p>
+	   		</ul>
+	  </div>
+
+	  <div id="tabs-8">
+	   		<h3>JQuery UI</h3>
+			<p>A partir del tema base de JQuery UI he cambiado los colores para personalizarlo un poco.</p>
+			<div class="grupo">
+			  	<img class="tam" src="./imgDocumentacion/JQUIT1.png" alt="jqueryUI">
+			  	<img class="tam" src="./imgDocumentacion/JQUIT2.png" alt="jqueryUI">
+			  	<img class="tam" src="./imgDocumentacion/JQUIT3.png" alt="jqueryUI">
+		  	</div>
+			
+			<p>Para reducir el peso de JQuery UI sólo he descargado los componentes que he usado, así se reduce el peso.</p>
+	   		<div class="grupo2">
+			  	<img class="tam" src="./imgDocumentacion/JQUI1.png" alt="jqueryUI">
+			  	<img class="tam" src="./imgDocumentacion/JQUI2.png" alt="jqueryUI">
+			  	<img class="tam" src="./imgDocumentacion/JQUI3.png" alt="jqueryUI">
+			  	<img class="tam" src="./imgDocumentacion/JQUI4.png" alt="jqueryUI">
+		  	</div>
+
+			<h3>Peso JQuery UI</h3>
+		  	<p>El peso de JQuery UI es de 667KB</p>
+			<img class="tamJquery" src="./imgDocumentacion/TMJQUI.png" alt="jqueryUI">
+	  </div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+.cabecera{
+	background-color: #1a2f4b;
+	display: flex;
+	flex-flow: row;
+}
+
+#effect{
+	background-color: white;
+}
+
+.tituloCasa{
+	opacity: 0;
+}
+
+.iconoMenu{
+	flex: 2;
+	order: 2;
+}
+
+.logo{
+	margin-left: 10px;
+	flex: 20;
+	order: 1;
+}
+
+.logo>h3{
+	margin: 0px;
+	margin-top: -5px;
+	margin-bottom: 4px;
+	padding: 0px;
+}
+
+.busquedaSuperior{
+		margin: 20px auto;
+}
+
+.Casas{
+	width: 90%;
+}
+
+	#menu{
+	  background-color: #60e550;
+	  height: 0px;
+	  width: 0px;
+		margin: 0px;
+		padding: 0px;
+		*position: absolute;
+	  transition: 2s;
+	}
+	
+	#menu>ul{
+		opacity: 0;
+		display: none;
+	}
+	
+	#menu:target>ul{
+		opacity: 1;
+		transition: 2s;
+		*margin: 0px;
+		padding: 0px;
+		margin:0 0 0 10px;
+		display: block;
+	}
+	
+	#menu ul li{
+		list-style: none;
+	}
+
+	#menu:target{
+		width: 95%;
+	  height: 100%;
+	  transform: translate(10px, 20px);
+		transition: 2s;
+		
+	}
+	
+	#menu >ul li{
+		border-bottom: 1px solid #fffd75;
+		padding: 10px 35px;
+		text-align: center;
+	}
+	
+	#menu >ul>a{
+		text-decoration: none;
+		color: white;
+	}
+
+	#menu >ul>a>li{
+		transition: 1s;
+	}
+
+	#menu>ul>a>li:hover{
+		background-color: black;
+	}
+
+	.cuadroBusqueda{
+		display: flex;
+		flex-flow: row;
+	}
+
+	.busquedaSuperior{
+		display: flex;
+		flex-flow: column;
+		border: 1px solid black;
+		background-color: #fffd75;
+		border-radius: 5px;
+		margin: 20px 0px;
+		padding: 15px;
+		width: 80%;
+	}
+
+	.busquedaSuperior h3{
+		margin: 10px;		
+	}
+
+	.cuadroBusqueda input{
+		flex: 1;
+		margin: 0 auto;
+		border-radius: 5px;
+		padding: 10px;
+		border: solid 5px #c9c9c9;
+		transition: border 0.3s;
+	}
+
+	.cuadroBusqueda input:focus{
+		border: solid 5px #969696;
+	}
+
+	.cuadroBusqueda img{
+		flex: 1;
+	}
+
+	section h3{
+		margin-left: 10px;
+	}
+	
+	.contenido{
+		display: flex;
+		flex-flow: column;
+	}
+
+	body{
+		background-color: #EBECED;
+	}
+
+	main{
+		width: 90%;
+		margin: 0 auto;
+	}
+  
+	article{
+		border-radius: 5px;
+		background-color: rgba(0, 131, 44, 0.1);
+		width: 100%;
+	}
+
+	.casasRecomendadas img{
+		*height: 100%;
+		width: 100%;
+	}
+
+	.casasRecomendadas{
+		margin: 10px;
+		display: flex;
+		flex-flow: column;
+		box-shadow: 2px 5px 5px -1px rgba(0,0,0,0.66);
+	}
+
+	.descripcion{
+		flex: 5;
+		display: flex:
+		flex-flow: column;
+	}
+	
+	.descripcion p{
+		margin: 15px;		
+	}
+
+	footer{
+		margin: 10px;
+		display: flex;
+		flex-flow: row;
+	}
+
+	footer input{
+		flex: 1;
+	}
+
+	.menuResolucionAlta{
+		display: none;
+	}
+
+	.boton{
+		order: 2;
+		text-align: center;
+		text-decoration: none;
+		background-color: #a3f7bf;
+		padding: 10px;
+		border-radius: 10px;
+		transition: 1s;
+		margin-bottom: 10px;
+		color: black;
+		box-shadow: 1px 1px 1px .3px rgba(0,0,0,0.4);
+		height: 20%;
+		margin-left: 10px;
+	}
+
+.boton:hover{
+	  background-color: #29a19c;
+		color: white;
+}
+
+	input[type="button"]{
+		background-color: #a3f7bf;
+		padding: 10px;
+		border-radius: 10px;
+		transition: 1s;
+		margin-bottom: 10px;
+	}
+	
+	input[type="button"]:hover{
+		background-color: #29a19c;
+		color: white;
+	}
+
+
+
+@media screen and (min-width:768px){
+	#menu{
+		display: none;
+	}
+	
+	.busquedaSuperior{
+		margin: 20px auto;
+  }
+	
+	.iconoMenu{
+		display: none;
+	}
+	
+	.casasRecomendadas img{
+		height: 100%;
+		width: 100%;
+	}
+	
+	.cuadroBusqueda{
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	.menuResolucionAlta{
+		display: block;
+		
+	}
+	
+	.menuResolucionAlta ul{
+		display: flex;
+		flex-flow: row;
+		background-color: #28475c;
+		margin: 0;
+		padding: 10px;
+	}
+	
+	.menuResolucionAlta li{
+		list-style: none;
+		flex: 1;
+		padding: 10px;
+		color: white;
+	}
+	
+	.menuResolucionAlta a{
+		text-decoration: none;
+		margin: 0px 20px;
+	}
+}
+
+
+@media screen and (min-width:920px){
+	.casasRecomendadas{
+		display: flex;
+		flex-flow: row;
+	}
+	
+	.casasRecomendadas picture{
+		width: 50%;
+	}
+	
+}
+
+@media screen and (min-width:1200px){
+	.casasRecomendadas picture{
+		width: 100%;
+	}
+	
+	.busquedaSuperior{
+		margin: 20px auto;
+	}
+	
+	section h3{
+		text-align: center;
+	}
+	
+	section>.Casas{
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 auto;
+	}
+	
+
+	.casasRecomendadas{
+		width: 20%;
+		display: flex;
+		flex-flow: column;
+	}
+	
+	.casasRecomendadas footer{
+		display: flex;
+		flex-flow: column;
+	}
+	
+	.casasRecomendadas input[type="button"]{
+		order: 2;
+	}
+}
+

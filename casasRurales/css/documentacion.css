@@ -1,0 +1,51 @@
+.cabecera{
+  background-color: #3BF60C;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.cabecera h2{
+  margin: 0px;
+  padding: 0px;  
+}
+#tabs{
+  padding: 0px;
+}
+
+img{
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+}
+
+body{
+  margin: 0;
+}
+
+.grupo{
+  display: flex;
+  flex-flow: row;
+}
+
+.grupo img{
+  width: 20%;
+}
+
+.grupo #flecha{
+  width: 20%;
+  height: 20%;
+  margin: auto 0;
+}
+
+.grupo2{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+}
+
+.tamJquery{
+  width: 30%;
+}

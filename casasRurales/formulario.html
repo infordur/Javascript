@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<script src="./js/external/jquery/jquery.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/jquery.validate.js"></script>
+	<script src="./js/jquery.cookie.js"></script>
+	<script src="./js/additional-methods.js"></script>
+	<script src="./js/validarForm.js"></script>
+	<link href="./css/normalize.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="./js/jquery-ui.css">
+	<link rel="stylesheet" href="./js/jquery-ui.structure.css">
+	<link rel="stylesheet" href="./js/jquery-ui.theme.css">
+	<link href="./css/formulario.css" type="text/css" rel="stylesheet" media="screen">
+	
+
+	<title>Casas Rurales</title>
+</head>
+<body>
+	<header>
+		<div class="cabecera">
+			<a class="logo" html="./index.html"><img src="./img/logo.png"><h3>RuralTrip</h3></a>
+			<a class="iconoMenu" href="#menu"><img src="./img/ic_reorder_black_24dp_2x.png" alt="Menu"></a>
+		</div>
+		<nav id="menu">
+			<ul>
+				<a href="./index.html"><li>Inicio</li></a>
+				<a href="./casasRurales.html"><li>Casas</li></a>
+			</ul>
+		</nav>
+
+		<nav class="menuResolucionAlta">
+			<ul>
+				<a href="./index.html"><li>Inicio</li></a>
+				<a href="./casasRurales.html"><li>Casas</li></a>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div>
+			
+			<form id="formval" class="formulario" action="#" method="post">
+				<h2>Alquiler</h2>
+				<span>Nombre</span><input type="text" name="nombre" id="nombre" placeholder="Nombre">
+				<span>Apellidos</span><input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+				<span>Correo</span><input type="email" name="email" id="email" placeholder="example@example.com">
+				<span>Teléfono</span><input type="text" name="telefono" id="telefono" placeholder="Telefono">
+				<span>Nº Personas</span><input type="number" name="npersonas" id="npersonas" placeholder="4">
+				<span>Fecha Entrada:</span><input type="text" id="from" name="fechaE" placeholder="dd/mm/yyyy" readonly>
+				<span>Fecha Salida:</span><input type="text" id="to" name="fechaS" placeholder="dd/mm/yyyy" readonly>
+				<span>Acepto las condiciones<input type="checkbox" name="checkbox" id="checkbox"></span>
+				<input type="submit" id="enviar" name="enviar" value="Reservar">
+			</form>
+		</div>
+
+	</main>
+	
+</body>
+</html>
