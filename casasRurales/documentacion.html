@@ -31,41 +31,42 @@
 	    <li><a href="#tabs-8">JQuery UI</a></li>
 	  </ul>
 	  <div id="tabs-1">
-		<h3>Comprobación de que Javascript está activo.</h3>
+		<h3 class="titulo">Comprobación de que Javascript está activo.</h3>
 		<p>Si javascript no se encuentra activo en nuestro navegador nos saldrá un mensaje indicandolo y diciendonos como se puede activar.</p>
 	  	<img src="./imgDocumentacion/JA2.png" alt="Javascript Activo">
+	  	<h3 class="titulo">Código</h3>
 	  	<p>Este es el código para implementar la imagen anterior.</p>
 		<img src="./imgDocumentacion/JA1.png" alt="Javascript Activo">
 
 	  </div>
 	  <div id="tabs-2">
-	    <h3>Comprobación de que las cookies están activadas.</h3>
+	    <h3 class="titulo">Comprobación de que las cookies están activadas.</h3>
 		<p>Si las cookies no se encuentran activadas en nuestro navegador nos saldrá un mensaje indicandolo.</p>
 	  	<img src="./imgDocumentacion/CA.png" alt="Cookies Activas">
+	  	<h3 class="titulo">Código</h3>
 	  	<p>Este es el código para implementar la imagen anterior.</p>
 		<img src="./imgDocumentacion/CA2.png" alt="Cookies Activas">
 	  </div>
 
 	  <div id="tabs-3">
-	  	<h3>Página de inicio</h3>
+	  	<h3 class="titulo">Página de inicio</h3>
 	  	<p>Para la página de inicio se han añadido los mensajes de activación de cookies y javascript en caso de que no esten activos.</p>
 	  	<img src="./imgDocumentacion/JA2.png" alt="Javascript Activo">
 	  	<img src="./imgDocumentacion/CA.png" alt="Cookies Activas">
 		
-		<h3>Efectos</h3>
-		<p>También se ha añadido un efecto con jquery en el cuadro de busqueda y en el botón.
-		El código es el siguiente:</p>
+		<h3 class="titulo">Efectos</h3>
+		<p>Se ha añadido un efecto con jquery en el cual el cuadro de busqueda aparece y el botón se desplaza.</p>
+		<h3 class="titulo">Código</h3>
 		<p>Efecto del buscador:</p>
-		<p>Este código hace que el buscador se muestre.</p>
+		<p>Hace que el cuadro de búsqueda aparezca.</p>
 	  	<img src="./imgDocumentacion/EB.png" alt="Efecto Buscador">
 	  	<p>Efecto del botón:</p>
 	  	<p>Este código hace que el botón se desplaze hacia la derecha, después hacia la izquierda y acaba en el centro con la letra ampliada.</p>
 	  	<img src="./imgDocumentacion/EBo.png" alt="Efecto Botón">
-
 	  </div>
 
 	  <div id="tabs-4">
-	  	<h3>Página de Casas</h3>
+	  	<h3 class="titulo">Página de Casas</h3>
 	   		<p>Para la página que muestra las casas disponibles se ha añadido un efecto que despliega la lista de casas además de un efecto al título de la casa.</p>
 	   		<p>El efecto aplicado al título de la casa hará que este aparezca, agrande el tamaño de la letra y se cambie a color verde</p>
 	  		<div class="grupo">
@@ -74,15 +75,13 @@
 
 	  		<img src="./imgDocumentacion/LC.png" alt="Efecto Título Casa">
 	  		</div>
-
-	  		El código es el siguiente:
+			<h3 class="titulo">Código</h3>
+	  		<p>Este código hará que el título de la casa se amplie y cambie su color a verde.</p>
 	  		<img src="./imgDocumentacion/LC2.png" alt="Efecto Título Casa">
-			
-
 	  </div>
 
 	  <div id="tabs-5">
-	  	<h3>LightBox</h3>
+	  	<h3 class="titulo">LightBox</h3>
 	   		<p>En la página de vista de la casa seleccionada se encontrarán una serie de imágenes que muestran la casa por medio de un lightbox</p>
 	  		<div class="grupo2">
 		  		<img src="./imgDocumentacion/LB1.png" alt="Lightbox">
@@ -96,26 +95,41 @@
 	  </div>
 
 	  <div id="tabs-6">
-	   		<h3>Formulario</h3>
+	   		<h3 class="titulo">Formulario</h3>
 
-	   		<h3>Validación</h3>
+	   		<h3 class="titulo">Validación</h3>
 	   		<p>Para la validación de formularios he utilizado un plugin de jquery (<a href="https://github.com/jzaefferer/jquery-validation">jquery validation</a>) con el que la validación se hace de forma más sencilla.</p>
-		  	<p>El código del formulario es el siguiente:</p>
+	   		<p>La sintaxis utiliada es la siguiente:</p>
+	   		<ul>
+	   			<li><b>required:</b> indica que el campo es obligatorio</li>
+	   			<li><b>minlength:</b> indica que debe contener X caracteres como mínimo.</li>
+	   			<li><b>maxlength</b> indica que debe contener X caracteres como mínimo.</li>
+	   			<li><b>min</b> indica que el número debe ser mínimo X</li>
+	   			<li><b>number</b> indica que el dato introcudido tiene que ser un número</li>
+	   			<p>Estos controles han sido añadidos ya que debían ser específicos (imágenes debajo):</p>
+	   			<li><b>email</b> indica que el dato introcudido tiene que ser una fecha</li>
+	   			<li><b>date</b> indica que el dato introcudido tiene que ser una fecha</li>
+	   			<li><b>solotexto</b> indica que el dato introcudido tiene que ser letras</li>
+	   		</ul>
+
+	   		<h3 class="titulo">Código</h3>
+		  	<p>Código formulario:</p>
 		  	<img src="./imgDocumentacion/F.png" alt="Formulario">
 		 
-		  	<p>El código jquery para validar el formulario es el siguiente</p>
+		  	<p>Código validación de formulario:</p>
 		  	<img class="tam" src="./imgDocumentacion/VF1.png" alt="Validación formulario">
 
-		  	<p>En algunos casos ha hecho falta añadir un patrón personalizado ya que el que incorpora el plugin no nos servía, como es el caso de la fecha y el email</p>
+		  	<p>En algunos casos ha hecho falta añadir un patrón personalizado ya que el que incorpora el plugin no nos servía, como es el caso de la fecha,el email y el control de nombre y apellidos</p>
 		  	<img src="./imgDocumentacion/VF4.png" alt="Formulario">
-
-		  	<h3>Mensajes personalizados</h3>
+			
+			<h3 class="titulo">Código</h3>
+		  	<h3 class="titulo">Mensajes personalizados</h3>
 			<p>Para los mensajes de error, el mismo plugin permite personalizarlos dependiendo del tipo de error especificado en las reglas.</p>
 		  	<img class="tam" src="./imgDocumentacion/VF2.png" alt="Validación formulario">
 		  	<img class="tam" src="./imgDocumentacion/VF3.png" alt="Validación formulario">
 			
-		  	<h3>Fechas</h3>
-			<p>Para las fechas he utilizado el elemento <b>Datepicker</b> de jquery-ui, en el que he tenido que cambiar la configuración para adaptarlo a español</p>
+		  	<h3 class="titulo">Fechas</h3>
+			<p>Para las fechas he utilizado el elemento <b>Datepicker</b> de jquery-ui, en el que he tenido que cambiar la configuración para adaptarlo a español:</p>
 		  	<img class="tam" src="./imgDocumentacion/DP.png" alt="Validación formulario">
 		  	<img class="tam" src="./imgDocumentacion/DP2.png" alt="Validación formulario">
 		  	<p>Para el control de que no se puedan seleccionar fechas incorrectas (fecha de salida anterior que fecha de entrada o fecha entrada anterior al dia actual) he tenido que añadir un pequeño código para controlarlo.</p>
@@ -125,15 +139,15 @@
 			<p>Para la creación y manejo de cookies he utilizado el plugin <a href="https://github.com/carhartl/jquery-cookie">jquery cookie</a> que facilita la creación y el manejo de cookies</p>
 			<p>Si el usuario se ha creado correctamente los datos se almacenarán en cookies y serán cargados la siguiente vez.</p>
 		  	<img class="tam" src="./imgDocumentacion/CO2.png" alt="Cookies">
-		  	<p>El código de creación de cookies es el siguiente:</p>
+		  	<p>Código de creación de cookies:</p>
 		  	<img class="tam" src="./imgDocumentacion/CO1.png" alt="Cookies">
-		  	<p>El código que carga los datos en los inputs si las cookies existen es el siguiente:</p>
+		  	<p>Código que carga los datos en los inputs si las cookies existen:</p>
 		  	<img class="tam" src="./imgDocumentacion/CO3.png" alt="Cookies">
 	  </div>
 
 	  <div id="tabs-7">
-	   		<h3>Plugins</h3>
-	   		<p>Para la realización de esta práctica he utilizado 2 plugins externos de jquery.</p>
+	   		<h3 class="titulo">Plugins</h3>
+	   		<p>Para la realización de esta práctica he utilizado 2 plugins de jquery externos.</p>
 	   		<ul>
 	   			<li><b>jquery validation</b> <a href="https://github.com/jzaefferer/jquery-validation">Página en Github</a></li>
 	   			<p>Este plúgin simplifica la validación de formularios ya que solo has de indicar las reglas que quieres que se aplicen y sus mensajes correspondientes.</p>
@@ -143,7 +157,7 @@
 	  </div>
 
 	  <div id="tabs-8">
-	   		<h3>JQuery UI</h3>
+	   		<h3 class="titulo">JQuery UI</h3>
 			<p>A partir del tema base de JQuery UI he cambiado los colores para personalizarlo un poco.</p>
 			<div class="grupo">
 			  	<img class="tam" src="./imgDocumentacion/JQUIT1.png" alt="jqueryUI">
@@ -159,7 +173,7 @@
 			  	<img class="tam" src="./imgDocumentacion/JQUI4.png" alt="jqueryUI">
 		  	</div>
 
-			<h3>Peso JQuery UI</h3>
+			<h3 class="titulo">Peso JQuery UI</h3>
 		  	<p>El peso de JQuery UI es de 667KB</p>
 			<img class="tamJquery" src="./imgDocumentacion/TMJQUI.png" alt="jqueryUI">
 	  </div>

@@ -27,17 +27,23 @@ $(document).ready(function() {
 		return this.optional( element ) || /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/.test( value.trim());
 	}
 
+	$.validator.methods.solotexto=function( value, element ){
+		return this.optional( element ) || /^[A-záéíóúÁÉÍÓÚñÑ]{2,}([\s]+[A-záéíóúÁÉÍÓÚñÑ]{2,})*$/.test( value.trim());
+	}
+
 	$("#enviar").click(function() {
 
 		var comprobarFormulario=$("#formval").validate({
 			rules: {
 				nombre:{
 					required: true,	
-					minlength: 3
+					minlength: 3,
+					solotexto: true
 				},
 				apellidos:{
 					required: true,
-					minlength: 3
+					minlength: 3,
+					solotexto: true
 				},
 				email:{
 					required: true,
@@ -69,11 +75,13 @@ $(document).ready(function() {
 			messages:{
 				nombre:{
 					required: "Rellene el campo",
-					minlength: "Mínimo 3 caracteres"
+					minlength: "Mínimo 3 caracteres",
+					solotexto: "Sólo letras"
 				},
 				apellidos:{
 					required: "Rellene el campo",
-					minlength: "Mínimo 3 caracteres"
+					minlength: "Mínimo 3 caracteres",
+					solotexto: "Sólo letras"
 				},
 				email:{
 					required: "Rellene el campo",
